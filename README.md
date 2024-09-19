@@ -1,1 +1,1 @@
-# omo_r2mini
+# omo_r2
