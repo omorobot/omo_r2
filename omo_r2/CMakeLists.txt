@@ -17,12 +17,6 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(omo_r2_bringup REQUIRED)
-find_package(omo_r2_cartographer REQUIRED)
-find_package(omo_r2_description REQUIRED)
-find_package(omo_r2_navigation REQUIRED)
-find_package(omo_r2_robot REQUIRED)
-find_package(omo_r2_teleop REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
