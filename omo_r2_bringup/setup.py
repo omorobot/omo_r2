@@ -14,6 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*')), # add
         (os.path.join('share', package_name, 'param'), glob('param/*')), # add
+        (os.path.join('share', package_name, 'rviz'), glob('rviz/*')), # add
     ],
     install_requires=['setuptools'],
     zip_safe=True,
