@@ -6,7 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
-    navigation_dir = get_package_share_directory('r2mini_navigation')
+    navigation_dir = get_package_share_directory('omo_r2_navigation')
 
     map = LaunchConfiguration('map', default=os.path.join(navigation_dir, 'map', 'map.yaml'))
     params_file = LaunchConfiguration('params_file', default=os.path.join(navigation_dir, 'param', os.environ['ROBOT_MODEL'] + '.yaml'))
