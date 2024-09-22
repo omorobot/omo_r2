@@ -1,10 +1,10 @@
 import os
-import sys
 import rclpy
 import select
+import sys
+from geometry_msgs.msg import Twist
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
-from geometry_msgs.msg import Twist
 
 if os.name == 'nt':
     import msvcrt
