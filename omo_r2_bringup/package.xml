@@ -9,6 +9,9 @@
 
   <depend>omo_r2_description</depend>
   <depend>omo_r2_robot</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>rviz2</depend>
+  <depend>tf2_ros</depend>
   <depend>ydlidar_ros2_driver</depend>
 
   <export>
