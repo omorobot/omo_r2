@@ -1,13 +1,13 @@
 import os # add
 from glob import glob # add
-from setuptools import setup
+from setuptools import find_packages, setup
 
 package_name = 'omo_r2_teleop'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
