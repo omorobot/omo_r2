@@ -1,0 +1,25 @@
+robot_control:
+  ros__parameters:
+    port:
+      name: "/dev/ttyROBOT"
+      baudrate: 115200
+
+    wheel:
+      separation: 0.17
+      radius: 0.034
+
+    motor:
+      gear_ratio: 21.3
+      max_lin_vel: 0.3 # 2.0
+      max_ang_vel: 1.0 # 2.5
+
+    sensor:
+      old_enc_pulse: 44.0
+      new_enc_pulse: 1440.0
+      use_imu: true
+
+# diff_drive_controller:
+#   ros__parameters:
+#     odometry:
+#       frame_id: "odom"
+#       child_frame_id: "base_footprint"
