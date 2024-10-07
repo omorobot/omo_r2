@@ -1,0 +1,23 @@
+ydlidar_ros2_driver_node:
+  ros__parameters:
+    port: /dev/ttyLIDAR                     # set lidar the serial port
+    frame_id: base_scan                     # lidar tf coordinate system name
+    ignore_array: ""                        # lidar filtering angle area
+    baudrate: 128000                        # lidar baudrate
+    lidar_type: 1                           # set lidar type (1: type_triangle)
+    device_type: 0                          # set device type (0: ydlidar_type_serial)
+    sample_rate: 5                          # set lidar sample rate
+    abnormal_check_count: 4                 # set the number of abnormal startup data attempts
+    fixed_resolution: true                  # fixed angular resolution
+    reversion: true                         # reversion lidar
+    inverted: true                          # inverted lidar (true: counterclockwise)
+    auto_reconnect: true                    # automatically reconnect the lidar
+    isSingleChannel: true                   # whether lidar is a single-channel
+    intensity: false                        # whether lidar has intensity
+    support_motor_dtr: false                # whether the lidar can be started and stopped by seral dtr
+    angle_max: 180.0                        # maximum valid angle
+    angle_min: -180.0                       # minimum valid angle
+    range_max: 12.0                         # maximum valid range
+    range_min: 0.1                          # minimum valid range
+    frequency: 10.0                         # set scanning frequency
+    invalid_range_is_inf: false             # invalid range is inf (false: 0.0)
